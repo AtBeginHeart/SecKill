@@ -1,0 +1,5 @@
+#mapper 文件扫描不到
+Invalid bound statement (not found): com.seckill.project.seckillsystem.SecKillManager.SecKillMapper.seckillMapper
+1.路径问题SecKillMapper
+#配置.xml文件路径
+mybatis.mapperLocations=classpath:/mapper/SecKillMapper.xml
