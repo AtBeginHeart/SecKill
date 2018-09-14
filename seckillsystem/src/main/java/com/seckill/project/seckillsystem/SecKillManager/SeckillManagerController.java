@@ -16,4 +16,8 @@ public class SeckillManagerController {
     public String secKill2db(){
         return seckillManagerService.seckill2dbService();
     }
+    @RequestMapping("/seckillMappertest")
+    public String secKill3db(){
+        return seckillManagerService.seckillofMapper();
+    }
 }
