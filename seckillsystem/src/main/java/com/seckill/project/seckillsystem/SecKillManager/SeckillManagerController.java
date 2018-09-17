@@ -20,4 +20,5 @@ public class SeckillManagerController {
     public String secKill3db(){
         return seckillManagerService.seckillofMapper();
     }
+
 }

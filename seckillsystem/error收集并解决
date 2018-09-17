@@ -3,3 +3,14 @@ Invalid bound statement (not found): com.seckill.project.seckillsystem.SecKillMa
 1.路径问题SecKillMapper
 #配置.xml文件路径
 mybatis.mapperLocations=classpath:/mapper/SecKillMapper.xml
+################################################################################33
+2.配置前端页面
+https://blog.csdn.net/rocling/article/details/81676928
+#####################################################################################
+在controller上加注解@Controller 和@RestController都可以在前端调通接口，但是二者的区别在于，当用前者的时候在方法上必须添加注解@ResponseBody，如果不添加@ResponseBody，就会报上面错误，因为当使用@Controller 注解时，spring默认方法返回的是view对象（页面）。而加上@ResponseBody，则方法返回的就是具体对象了。@RestController的作用就相当于@Controller+@ResponseBody的结合体
+注意：@controller不是@RestController，使用@RestController会返回“index”字符串
+报错org.thymeleaf.exceptions.TemplateInputException: Error resolving template解决方案
+1.注解改用Controller
+2.检查html文件后缀是否正确，有可能不是很正确
+------
+另外，个人不推荐这正非页面读写分离的形式，我们可以重新部署nginx，以读写分离的形式来调用相关页面
