@@ -24,6 +24,9 @@ public class BusinessSecKillService {
 
            // logger.info( "秒杀查询结果为"+businessSec );
             result = "恭喜您抢到了iPhoneX";
+            //测试数据，获取当前线程，然后再用压力测试工具进行测试。
+            Thread th=Thread.currentThread();
+            System.out.println("Tread name:"+th.getName());
             System.out.println( result );
             System.out.println( i++ );
             //更新数据库数据
